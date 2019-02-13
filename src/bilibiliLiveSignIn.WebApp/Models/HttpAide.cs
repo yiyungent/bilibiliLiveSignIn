@@ -40,7 +40,7 @@ namespace bilibiliLiveSignIn.WebApp.Models
                     Uri target = new Uri(url);
                     foreach (string name in cookies.Keys)
                     {
-                        request.CookieContainer.Add(new Cookie(name, cookies[name].Replace(",", "%2C").Replace(" ", "")) { Domain = target.Host });
+                        request.CookieContainer.Add(new Cookie(name, cookies[name].Replace(", ", "%2C").Replace(",", "%2C")) { Domain = target.Host });
                     }
                 }
                 if (!string.IsNullOrEmpty(referer))
@@ -118,7 +118,7 @@ namespace bilibiliLiveSignIn.WebApp.Models
                     Uri target = new Uri(url);
                     foreach (string name in cookies.Keys)
                     {
-                        request.CookieContainer.Add(new Cookie(name, cookies[name].Replace(",", "%2C").Replace(" ", "")) { Domain = target.Host });
+                        request.CookieContainer.Add(new Cookie(name, cookies[name].Replace(", ", "%2C").Replace(",", "%2C")) { Domain = target.Host });
                     }
                 }
                 if (!string.IsNullOrEmpty(referer))

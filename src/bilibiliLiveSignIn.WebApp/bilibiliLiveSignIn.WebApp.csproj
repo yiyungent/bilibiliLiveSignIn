@@ -84,6 +84,7 @@
     <Content Include="Api\SignIn.ashx" />
     <Content Include="Api\Silver2coin.ashx" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -16,7 +16,7 @@ namespace bilibiliLiveSignIn.WebApp.Api
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "text/plain";
-            string msg = LiveSignIn.Silver2coin();
+            string msg = LiveSignIn.AppSilver2coin();
             context.Response.Write(msg);
         }
 

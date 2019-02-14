@@ -69,6 +69,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\DailyBag.ashx.cs">
+      <DependentUpon>DailyBag.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Api\SignIn.ashx.cs">
       <DependentUpon>SignIn.ashx</DependentUpon>
     </Compile>
@@ -83,6 +86,7 @@
   <ItemGroup>
     <Content Include="Api\SignIn.ashx" />
     <Content Include="Api\Silver2coin.ashx" />
+    <Content Include="Api\DailyBag.ashx" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">

@@ -17,9 +17,9 @@ bilibiliLiveSignIn 告别每天手动签到，让程序每天帮你签到
 
 ## 快速搭建
 
-1. 下载发布部署包 <a href="https://github.com/yiyungent/bilibiliLiveSignIn/releases/download/v0.2.0/bilibiliLiveSignIn_publish_0.1.0.zip" target="_blank">bilibiliLiveSignIn_publish_0.2.0.zip</a>
+1. 下载发布部署包 <a href="https://github.com/yiyungent/bilibiliLiveSignIn/releases/download/v0.2.1/bilibiliLiveSignIn_publish_0.2.1.zip" target="_blank">bilibiliLiveSignIn_publish_0.2.1.zip</a>
 2. 浏览器打开 <a href="https://live.bilibili.com/" target="_blank">哔哩哔哩直播</a>，通过 F12 获取其中的 Cookie
-3. 解压 bilibiliLiveSignIn_publish_0.2.0.zip，将获得的 cookie 保存到 cookie.txt，将 bilibiliLiveSignIn_publish_0.2.0 文件夹下的所有文件上传到 Web服务器的根目录（虚拟主机也可用，可使用 https://www.gearhost.com/ 提供的免费主机）
+3. 解压 bilibiliLiveSignIn_publish_0.2.1.zip，将获得的 cookie 保存到 Publish\cookie.txt，将 Publish 文件夹下的所有文件上传到 Web服务器的根目录（虚拟主机也可用，可使用 https://www.gearhost.com/ 提供的免费主机）
 4. 如需每天自动签到，并自动将银瓜子兑换为硬币，则设置定时任务 每天访问 签到（http(s)://你的域名/api/signin.ashx ），银瓜子换硬币（http(s)://你的域名/api/silver2coin.ashx ），领取直播每日礼包（http(s)://你的域名/api/dailybag.ashx ）即可
 5. 完成搭建
 

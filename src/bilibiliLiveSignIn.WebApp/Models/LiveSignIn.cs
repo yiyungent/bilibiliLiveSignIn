@@ -111,5 +111,24 @@ namespace bilibiliLiveSignIn.WebApp.Models
             }
         }
         #endregion
+
+        #region 领取每日礼包
+        public static string DailyBag()
+        {
+            string url = "https://api.live.bilibili.com/gift/v2/live/receive_daily_bag";
+            string userAgent = _biliClientUserAgent;
+            string cookies = ReadCookie();
+            string responseData = HttpAide.HttpGet(url: url, cookies: cookies, ua: userAgent);
+            dynamic jsonObj = JsonAide.JsonStr2Obj(responseData);
+            if (!JsonAide.IsPropertyExist(jsonObj, "msg"))
+            {
+                return null;
+            }
+            else
+            {
+                return jsonObj.msg.ToString();
+            }
+        }
+        #endregion
     }
 }
